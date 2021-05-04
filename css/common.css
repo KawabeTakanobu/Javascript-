@@ -69,31 +69,3 @@ html, body{
 	top: 4px;
 	text-shadow: none;
 }
-
-/* 文字のスクロール */
-.scroll-text {
-	margin : 0;
-	padding: 0;
-	width : 100%;
-	font-size : 24px;
-	text-align : center;
-	overflow : hidden;
-	line-height: 28px;
-}
-.scroll-text ul{
-	margin: 0;
-	display : inline-block;
-	padding-left: 100%;
-	white-space : nowrap;
-	animation : scrallText 15s linear infinite;
-	line-height: inherit;
-}
-.scroll-text ul li{
-	display: inline;
-	margin: 0 100px 0 0;
-	line-height: inherit;
-}
-@keyframes scrallText{
-	0% { transform: translateX(0)}
-	100% { transform: translateX(-100%)}
-}
