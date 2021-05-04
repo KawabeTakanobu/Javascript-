@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>オセロ</title>
+		<link rel="stylesheet" href="css/common.css">
+		<style type="text/css">
+			#game-container {
+				text-align: center;
+			}
+			#game-area {
+				display: inline-block;
+				margin: 0;
+				padding: 0;
+			}
+			.board-cell {
+				display: inline-block;
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+				font-size: 0;
+			}
+			.board-row {
+				display: block;
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+				font-size: 0;
+			}
+			#menu-container {
+				display: block;
+				text-align: center;
+			}
+			#menu-container a{
+				display: block;
+				margin: 32px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="menu-container" class="container">
+			<a href="javascript:setLevel(50);" class="btn-text-3d">やさしい</a>
+			<a href="javascript:setLevel(100);" class="btn-text-3d">ふつう</a>
+			<a href="javascript:setLevel(500);" class="btn-text-3d">むずかしい</a>
+		</div>
+		<div id="game-container" class="container"><div id="game-area"></div></div>
+	<body>
+		<script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script type="text/javascript" src="./js/othello/ReversiBitBoard.js"></script>
+		<script type="text/javascript" src="./js/othello/MonteCarloTreeSearch.js"></script>
+		<script type="text/javascript" src="./js/othello/othello.js"></script>
+	</body>
+</html>

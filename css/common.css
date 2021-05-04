@@ -1,0 +1,99 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
+}
+.container {
+	display: none;
+}
+.footer {
+	margin-top: 16px;
+	text-align: center;
+}
+
+/* 文字の色 */
+.font-gold {
+	font-weight: bold;
+	color: transparent;
+	background: linear-gradient(0deg, #B67B03 0%, #DAAF08 45%, #FEE9A0 70%, #DAAF08 85%, #B67B03 90% 100%); 
+	-webkit-background-clip: text;	
+}
+.font-silver {
+	font-weight: bold;
+	color: transparent;
+	background: linear-gradient(0deg, #757575 0%, #9E9E9E 45%, #E8E8E8 70%, #9E9E9E 85%, #757575 90% 100%);
+	-webkit-background-clip: text;
+}
+.font-bronze {
+	font-weight: bold;
+	color: transparent;
+    background: linear-gradient(0deg, #C62828 0%, #EF5350 55%, #FFEBEE 70%, #EF5350 85%, #C62828 90% 100%); 
+    -webkit-background-clip: text;
+}
+
+/* 3D丸ボタン */
+.btn-circle-3d {
+  display: inline-block;
+  text-decoration: none;
+  background: #ff8181;
+  color: #FFF;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  overflow: hidden;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #bd6565;
+  transition: .4s;
+}
+.btn-circle-3d:active {
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  border-bottom: none;
+}
+
+/* 3Dテキストボタン */
+.btn-text-3d {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 37px;
+	color: #799dec;
+	text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #6182ca, 0px 2px 0px #4f6aa7, 0px 3px 0px #5470ad;
+}
+.btn-text-3d:active {
+	top: 4px;
+	text-shadow: none;
+}
+
+/* 文字のスクロール */
+.scroll-text {
+	margin : 0;
+	padding: 0;
+	width : 100%;
+	font-size : 24px;
+	text-align : center;
+	overflow : hidden;
+	line-height: 28px;
+}
+.scroll-text ul{
+	margin: 0;
+	display : inline-block;
+	padding-left: 100%;
+	white-space : nowrap;
+	animation : scrallText 15s linear infinite;
+	line-height: inherit;
+}
+.scroll-text ul li{
+	display: inline;
+	margin: 0 100px 0 0;
+	line-height: inherit;
+}
+@keyframes scrallText{
+	0% { transform: translateX(0)}
+	100% { transform: translateX(-100%)}
+}
